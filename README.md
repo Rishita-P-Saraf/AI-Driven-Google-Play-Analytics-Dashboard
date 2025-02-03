@@ -10,6 +10,10 @@ This project focuses on analyzing Google Play Store data, extracting insights, a
 - **Sentiment Analysis**: Using VADER from NLTK
 - **Time-Based Analysis**: Implementing charts that display data only during specific time slots
 
+## Demo
+This is the link for the website which demonstrates the project with all the plotly interactive visualizations
+https://joyful-kleicha-70b3bb.netlify.app/
+
 ## Tasks
 ### 1. Word Cloud for Health & Fitness Apps
 - Generate a word cloud for frequent keywords in 5-star reviews
