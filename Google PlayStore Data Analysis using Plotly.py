@@ -506,22 +506,23 @@ ist_time = pytz.timezone('Asia/Kolkata')
 now = datetime.now(ist_time)
 current_hour = now.hour
 
-fig11 = go.Figure(data=[
-    go.Bar(name='Average Rating', x=category_stats['Category'], y=category_stats['avg_rating'],
-          marker_color='skyblue'),
-    go.Bar(name='Total Reviews', x=category_stats['Category'], y=category_stats['total_reviews'],
-          marker_color='lightcoral')
-])
+if 17 <= current_hour <= 19:
+    fig11 = go.Figure(data=[
+        go.Bar(name='Average Rating', x=category_stats['Category'], y=category_stats['avg_rating'],
+              marker_color='skyblue'),
+        go.Bar(name='Total Reviews', x=category_stats['Category'], y=category_stats['total_reviews'],
+              marker_color='lightcoral')
+    ])
+    
+    fig11.update_layout(title='Average Rating and Total Reviews for Top App Categories(January Updated, >=10M Size)',
+                      xaxis_title='Category',
+                      yaxis_title='Count/Rating',
+                      barmode='group')
+    fig11.show()
+    save_plot_as_html(fig11, "Top 10 App Categories by Installs.html","These are top 10 App Categories by Installs")
 
-fig11.update_layout(title='Average Rating and Total Reviews for Top App Categories(January Updated, >=10M Size)',
-                  xaxis_title='Category',
-                  yaxis_title='Count/Rating',
-                  barmode='group')
-fig11.show()
-save_plot_as_html(fig11, "Top 10 App Categories by Installs.html","These are top 10 App Categories by Installs")
-
-#else:
-#     print("The graph is available only between 3 PM and 5 PM IST.")
+else:
+     print("The graph is available only between 3 PM and 5 PM IST.")
 
 # %%
 #TASK 3
