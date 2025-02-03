@@ -1,6 +1,3 @@
-# Google-PlayStore-Data-Analysis-using-Plotly
-A simple python project in which I analyse Google Playstore apps using plotly.
-
 # NullClass Data Analyst Internship - Google Play Store Data Analysis
 
 ## Internship Report Summary
