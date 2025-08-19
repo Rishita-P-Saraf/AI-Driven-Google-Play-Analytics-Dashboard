@@ -7,6 +7,7 @@
 This project analyzes Google Play Store data to uncover insights about app performance, user sentiment, and monetization trends.
 It combines data cleaning, transformation, visualization, and NLP-based sentiment analysis, presented in an interactive Plotly dashboard deployed online.
 
+**[🔗 Live Demo](https://celebrated-cobbler-30e25c.netlify.app)**
 ---
 
 ## 🛠️ Tech Stack
