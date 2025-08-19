@@ -1,4 +1,4 @@
-# 📊 Google Play Store Data Analysis (Interactive Dashboard with Plotly)
+# 📊 AI-Driven Google Play Analytics Dashboard (Interactive Dashboard with Plotly)
 
 ## Internship Project — NullClass Data Analyst Intern
 
